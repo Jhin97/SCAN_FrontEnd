@@ -1,0 +1,137 @@
+{
+    "0": {
+        "commonName": "Chinchilla",
+        "latinName": "Chinchilla lanigera",
+        "spid": "SP090"
+    },
+    "1": {
+        "commonName": "Hedgehog",
+        "latinName": "Erinaceus europaeus",
+        "spid": "SP099"
+    },
+    "2": {
+        "commonName": "Macaque",
+        "latinName": "Macaca mulatta",
+        "spid": "SP020"
+    },
+    "3": {
+        "commonName": "Pig-tailed macaque",
+        "latinName": "Macaca nemestrina",
+        "spid": "SP017"
+    },
+    "4": {
+        "commonName": "Hamster",
+        "latinName": "Mesocricetus auratus",
+        "spid": "SP098"
+    },
+    "5": {
+        "commonName": "Blind mole rat",
+        "latinName": "Nannospalax galili",
+        "spid": "SP116"
+    },
+    "6": {
+        "commonName": "Mink",
+        "latinName": "Neovison\u00a0vison",
+        "spid": "SP101"
+    },
+    "7": {
+        "commonName": "Sheep",
+        "latinName": "Ovis aries",
+        "spid": "SP129"
+    },
+    "8": {
+        "commonName": "Civet",
+        "latinName": "Paguma larvata",
+        "spid": "SP091"
+    },
+    "9": {
+        "commonName": "Bonobo",
+        "latinName": "Pan paniscus",
+        "spid": "SP015"
+    },
+    "10": {
+        "commonName": "Chimpanzee",
+        "latinName": "Pan troglodytes",
+        "spid": "SP014"
+    },
+    "11": {
+        "commonName": "Tree shrew",
+        "latinName": "Tupaia belangeri",
+        "spid": "SP244"
+    },
+    "12": {
+        "commonName": "Alpaca",
+        "latinName": "Vicugna pacos",
+        "spid": "SP086"
+    },
+    "13": {
+        "commonName": "Chicken",
+        "latinName": "Gallus gallus",
+        "spid": "SP026"
+    },
+    "15": {
+        "commonName": "Zebra finch",
+        "latinName": "Taeniopygia guttata",
+        "spid": "SP025"
+    },
+    "16": {
+        "commonName": "Chinese softshell turtle",
+        "latinName": "Pelodiscus sinensis",
+        "spid": "SP191"
+    },
+    "17": {
+        "commonName": "Australian bearded dragon",
+        "latinName": "Pogona vitticeps",
+        "spid": "SP029"
+    },
+    "18": {
+        "commonName": "Turtle",
+        "latinName": "Trachemys scripta elegans",
+        "spid": "SP130"
+    },
+    "19": {
+        "commonName": "Red spotted grouper",
+        "latinName": "Patinopecten sp.",
+        "spid": "SP036"
+    },
+    "20": {
+        "commonName": "Mosquito",
+        "latinName": "Aedes aegypti",
+        "spid": "SP187"
+    },
+    "21": {
+        "commonName": "Honey bee",
+        "latinName": "Apis mellifera Linnaeus",
+        "spid": "SP042"
+    },
+    "22": {
+        "commonName": "Sea squirts",
+        "latinName": "Ciona robusta",
+        "spid": "SP057"
+    },
+    "23": {
+        "commonName": "Fruit fly",
+        "latinName": "Drosophila melanogaster",
+        "spid": "SP080"
+    },
+    "24": {
+        "commonName": "Ant",
+        "latinName": "Harpegnathos saltator",
+        "spid": "SP044"
+    },
+    "25": {
+        "commonName": "Pharaoh ant",
+        "latinName": "Monomorium pharaonis",
+        "spid": "SP049"
+    },
+    "26": {
+        "commonName": "Human",
+        "latinName": "Homo sapiens",
+        "spid": "SP121"
+    },
+    "27": {
+        "commonName": "Mouse",
+        "latinName": "Mus musculus",
+        "spid": "SP124"
+    }
+}
