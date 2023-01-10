@@ -1,36 +1,61 @@
 <template>
-    <el-menu
-      :default-active="activeIndex"
-      class="default-header"
-      mode="horizontal"
-      :ellipsis="false"
-      router
-    >
-      <el-menu-item index="/">SCAN</el-menu-item>
+  <el-affix :offset="0">
+    <el-menu :default-active="$route.path" class="default-header" mode="horizontal" :ellipsis="false" router>
+      <el-menu-item>SCAN</el-menu-item>
       <div class="flex-grow" />
-      <el-menu-item index="/neural_ST">Neural ST</el-menu-item>
-      <el-sub-menu index="2">
-        <template #title>Workspace</template>
-        <el-menu-item index="2-1">item one</el-menu-item>
-        <el-menu-item index="2-2">item two</el-menu-item>
-        <el-menu-item index="2-3">item three</el-menu-item>
-        <el-sub-menu index="2-4">
-          <template #title>item four</template>
-          <el-menu-item index="2-4-1">item one</el-menu-item>
-          <el-menu-item index="2-4-2">item two</el-menu-item>
-          <el-menu-item index="2-4-3">item three</el-menu-item>
-        </el-sub-menu>
+      <el-menu-item index="/">HOME</el-menu-item>
+      <el-sub-menu index="3" show-timeout="10" popper-offset="0">
+        <template #title>DATA MODULES</template>
+        <el-menu-item index="/neuralST">Neural ST</el-menu-item>
+        <el-menu-item index="/neuralPan">Neural Pan</el-menu-item>
+        <el-menu-item index="3-3">Neural Diz</el-menu-item>
+      </el-sub-menu>
+      <el-sub-menu index="4" show-timeout="10" popper-offset="0">
+        <template #title>FUNCTION MODULES</template>
+        <el-menu-item index="4-1">Neural Talk</el-menu-item>
+        <el-menu-item index="4-2">Neural Meta</el-menu-item>
+        <el-menu-item index="4-3">Neural Anno</el-menu-item>
+        <el-menu-item index="4-4">Neural Reg</el-menu-item>
+        <el-menu-item index="/neuralTree">Neural Tree</el-menu-item>
+        <el-menu-item index="4-6">Neural Target</el-menu-item>
+        <el-menu-item index="4-7">Neural D2C</el-menu-item>
+        <el-menu-item index="4-8">Neural Int</el-menu-item>
+      </el-sub-menu>
+      <el-sub-menu index="5" show-timeout="10" popper-offset="0">
+        <template #title>EVODEVO MODULES</template>
+        <el-menu-item index="5-1">Neural Evo</el-menu-item>
+        <el-menu-item index="5-2">Neural Devo</el-menu-item>
+        <el-menu-item index="5-3">Neural CS</el-menu-item>
+      </el-sub-menu>
+      <el-sub-menu index="6" show-timeout="10" popper-offset="0">
+        <template #title>DISPLAY MODULES</template>
+        <el-menu-item index="6-1">User Guideline</el-menu-item>
       </el-sub-menu>
     </el-menu>
-  </template>
-  
-  <script setup>
+  </el-affix>
 
-  </script>
+</template>
   
-  <style>
-  .flex-grow {
-    flex-grow: 1;
-  }
-  </style>
+  
+<style scoped>
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.el-header li:first-child {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #0463FA !important;
+}
+
+.el-header li {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.el-menu--horizontal {
+  border-bottom: none;
+}
+</style>
   

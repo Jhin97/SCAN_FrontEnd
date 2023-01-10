@@ -6,12 +6,10 @@ import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
 import materialKit from "./material-kit";
 import * as Icons from '@element-plus/icons-vue'
-import axios from 'axios';
-
 
 const app = createApp(App);
 
-app.config.globalProperties.$http = axios;
+// app.config.globalProperties.$request = Api;
 
 for (let iconName in Icons) {
     app.component(iconName, Icons[iconName])

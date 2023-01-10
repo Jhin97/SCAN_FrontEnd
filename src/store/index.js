@@ -5,18 +5,25 @@ const store = createStore({
 	state() {
 		return {
 			//数据字典的选项
-			dicts: {}
+			dicts: {},
+			speciesList: {}
 		}
 	},
 	getters: {
 		listDictByKey(state) { 
 			return state.dicts;
+		},
+		getSpeciesList(state) {
+			return state.speciesList;
 		}
 	},
 	mutations: {
 		setDict(state, key, dicts) {
 			state.dicts[key] = dicts;
 		},
+		setSpeciesList(state,speciesList){
+			state.speciesList = speciesList
+		}
 	}
 })
 

@@ -24,8 +24,8 @@
         </div>
     </div>
 
-    <el-dialog v-model="dialogTableVisible" title="Shipping address" center>
-        <CustomTable ref="table" entityType="TableDemo" dataSource="/api/panDemoData"></CustomTable>
+    <el-dialog v-model="dialogTableVisible" center width="75%">
+        <CustomTable ref="table" :entityType="entityType" :simpleSearchTarget="simpleSearchTarget"></CustomTable>
     </el-dialog>
 
 </template>
@@ -34,10 +34,13 @@
 .card {
     margin-bottom: 60px;
 }
+.text-center h5{
+    color: black !important;
+}
 </style>
 
 <script setup>
-import { onMounted, ref } from 'vue';
+import { ref } from 'vue';
 import CustomTable from '@/components/CustomTable.vue';
 
 const option = defineProps({
@@ -53,6 +56,10 @@ const option = defineProps({
     latinName: {
         type: String,
         required: true
+    },
+    entityType: {
+        type: String,
+        required: true
     }
 });
 const dialogTableVisible = ref(false)
@@ -62,8 +69,7 @@ const viewDetail = () => {
 }
 const table =ref(null);
 
+const simpleSearchTarget = {"common_name":option.commonName};
 
-// onMounted(() => {
-//     console.log(option.imgUrl)
-// })
+
 </script>

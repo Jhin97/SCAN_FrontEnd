@@ -1,6 +1,8 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import NeuralSTVue from '@/views/NeuralST.vue'
+import NeuralPanVue from '@/views/NeuralPan.vue'
+import NeuralProVue from '@/views/NeuralPro.vue'
+import NeuralTreeVue from '@/views/NeuralTree.vue'
 
 const routes = [
   {
@@ -9,10 +11,20 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/neural_ST',
+    path: '/neuralST',
     name: 'neuralST',
-    component: NeuralSTVue
+    component: NeuralProVue
   },
+  {
+    path: '/neuralPan',
+    name: 'neuralPan',
+    component: NeuralPanVue
+  },
+  {
+    path: '/neuralTree',
+    name: 'neuralTree',
+    component: NeuralTreeVue
+  }
 ]
 
 const router = createRouter({
